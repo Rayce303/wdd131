@@ -1,0 +1,91 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: Roboto, sans-serif;
+}
+header, footer {
+  background-color: cornflowerblue;
+  margin: 0 auto;
+  width: 100%;
+}
+main {
+    background-color: gray;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
+nav a {
+    padding: 20px;
+    color: black;
+    display: none;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #616061;
+}
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+}
+footer {
+    text-align: center;
+}
+img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    margin: 15px;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+          
+
+@media screen and (min-width: 700px) {
+    nav a {
+        display: inline;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section {
+        max-width: 33%;
+    }
+}
