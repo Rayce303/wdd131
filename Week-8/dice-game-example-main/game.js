@@ -12,7 +12,7 @@ document.querySelector("#rollButton").addEventListener("click", event => {
                 image.src = `assets/white_dice_${Math.floor(Math.random() * 6) + 1}.gif`;
             }
         });
-    }, 500);
+    }, 600);
 });
 
 function isDieUnlocked(dieImage) {
