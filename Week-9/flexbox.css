@@ -1,0 +1,55 @@
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-size: 20px;
+max-width: 1280px;
+margin: auto;
+padding: 1em;
+}
+
+img {
+max-width: 100%;
+}
+
+.main-nav {
+list-style-type: none;
+}
+
+hr{
+margin-top: 50px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.media-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 545px) {
+    .gallery-container .media-card {
+        max-width: 50%;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .media-card {
+        flex-direction: row;
+        align-items: start;
+        gap: 15px;
+    }
+}
