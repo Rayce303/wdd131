@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'FancyFont';
+    src: url('./font/Amatic_SC/AmaticSC-Bold.ttf');
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+h1 {
+    font-family: 'FancyFont';
+    font-size: 70px;
+    margin: 0;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.searchbar input {
+    border: none;
+}
+
+.searchbar button img {
+    width: 24px;
+    height: 24px;
+}
+
+.maincontent {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.maincontent img {
+    width: 100%;
+}
+
+.maincontent button {
+    margin-top: 10px;
+}
+
+.maincontent h2 {
+    font-family: 'FancyFont';
+    color: cornflowerblue;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+
+    .maincontent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .maincontent img {
+        width: 50%;
+    }
+
+    .theRightHalf {
+        margin-left: 10px;
+    }
+
+    .maincontent h2 {
+        font-family: 'FancyFont';
+        color: cornflowerblue;
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    footer {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
